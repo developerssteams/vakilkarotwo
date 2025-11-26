@@ -1,0 +1,435 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Preloader from "../components/Preloader";
+import ScrollToTop from "../components/ScrollToTop";
+import MagnetCursor from "../components/MagnetCursor";
+import WorkProcessSection from "../components/WorkProcessSection";
+import AboutSection from "../components/Home/AboutSection";
+
+function AboutUs() {
+  //preloader
+  useEffect(() => {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+      preloader.style.display = "none";
+    }
+  }, []);
+
+  return (
+    <div>
+      {/* Preloader */}
+      <Preloader />
+
+      {/* Breadcrumb Section */}
+      <div
+        className="breadcrumb-section bg-img jarallax"
+        data-jarallax=""
+        data-speed="0.6"
+        style={{ backgroundImage: `url('assets/img/bg-img/73.jpg')` }}
+      >
+        <div className="divider"></div>
+        <div className="container">
+          <div className="breadcrumb-content">
+            <h2
+              className="wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="700ms"
+            >
+              About Us
+            </h2>
+            <ul
+              className="list-unstyled wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="1000ms"
+            >
+              <li>
+                <Link className="magnet-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+        <div className="divider"></div>
+      </div>
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Work Process Section */}
+      <WorkProcessSection />
+      {/* Team Members Section */}
+      <section className="lawyers-team-section bg-white">
+        <div className="divider"></div>
+
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8 col-lg-7 col-xl-6">
+              <div className="section-heading text-center">
+                <div className="sub-title justify-content-center">
+                  <img src="assets/img/core-img/hammer.png" alt="" />
+                  Our Team
+                </div>
+                <h2>Exceptional Legal Team for Your Success</h2>
+              </div>
+            </div>
+          </div>
+    
+          <div className="row justify-content-center g-4">
+            {/* Laywer Card */}
+            <div className="col-12 col-sm-6 col-md-4">
+              <div className="laywer-card">
+                <img src="assets/img/bg-img/10.jpg" alt="" />
+
+                {/* Laywer Info */}
+                <div className="laywer-info text-center">
+                  <div className="laywer-name">Rebecca Edwards</div>
+                  <div className="laywer-position">Senior Consultant</div>
+                </div>
+
+                {/* Hover:: Laywer Info */}
+                <div className="hover-laywer-info text-center">
+                  <div className="laywer-name">Rebecca Edwards</div>
+                  <div className="laywer-position">Senior Consultant</div>
+                  {/* Social Nav */}
+                  <div className="social-nav">
+                    <Link to="#">
+                      <i className="ti ti-brand-facebook"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-x"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-linkedin"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-instagram"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Laywer Card */}
+            <div className="col-12 col-sm-6 col-md-4">
+              <div className="laywer-card">
+                <img src="assets/img/bg-img/11.jpg" alt="" />
+
+                {/* Laywer Info */}
+                <div className="laywer-info text-center">
+                  <div className="laywer-name">Shawn S. Kerendian</div>
+                  <div className="laywer-position">Associate Director</div>
+                </div>
+
+                {/* Hover:: Laywer Info */}
+                <div className="hover-laywer-info text-center">
+                  <div className="laywer-name">Shawn S. Kerendian</div>
+                  <div className="laywer-position">Associate Director</div>
+                  {/* Social Nav */}
+                  <div className="social-nav">
+                    <Link to="#">
+                      <i className="ti ti-brand-facebook"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-x"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-linkedin"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-instagram"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Laywer Card */}
+            <div className="col-12 col-sm-6 col-md-4">
+              <div className="laywer-card">
+                <img src="assets/img/bg-img/12.jpg" alt="" />
+
+                {/* Laywer Info */}
+                <div className="laywer-info text-center">
+                  <div className="laywer-name">Rebecca Edwards</div>
+                  <div className="laywer-position">Senior Consultant</div>
+                </div>
+
+                {/* Hover:: Laywer Info */}
+                <div className="hover-laywer-info text-center">
+                  <div className="laywer-name">Rebecca Edwards</div>
+                  <div className="laywer-position">Senior Consultant</div>
+                  {/* Social Nav */}
+                  <div className="social-nav">
+                    <Link to="#">
+                      <i className="ti ti-brand-facebook"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-x"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-linkedin"></i>
+                    </Link>
+                    <Link to="#">
+                      <i className="ti ti-brand-instagram"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact-section bg-secondary">
+        <div className="divider"></div>
+
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-12 col-md-6">
+              <div className="section-heading pe-lg-5">
+                <div className="sub-title">
+                  <img src="assets/img/core-img/hammer.png" alt="" />
+                  Contact us
+                </div>
+                <h2 className="mb-4">Let's Build Something Awesome Together</h2>
+                <p className="mb-5">
+                  Each demo built with Teba will look different. You ca
+                  customize almost anything in the appearance of your website
+                  with only a few clicks Teba will look different.
+                </p>
+              </div>
+
+              {/* Contact Info Card */}
+              <div className="contact-info-card pe-lg-5 mb-4">
+                <div className="icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                  >
+                    <g clipPath="url(#clip0_1_523)">
+                      <path
+                        d="M43.8208 18.7662L36.4564 9.19963C36.1838 8.84581 35.6866 8.75853 35.3096 8.99821L30.5549 12.0221H24.3536C24.2734 12.0221 24.1935 12.0393 24.1163 12.0618L19.3081 13.4458L14.3191 12.0812L9.4713 8.99821C9.1007 8.76256 8.6126 8.84245 8.337 9.18419L0.191395 19.2738C-0.10133 19.6363 -0.0529898 20.1657 0.30016 20.4695L4.56951 24.1437L8.39977 29.3053C7.27956 30.4987 7.30138 32.3809 8.46691 33.5468C8.98354 34.0631 9.64049 34.3548 10.3162 34.4226C10.2927 34.5757 10.2807 34.7311 10.2807 34.8889C10.2807 35.7033 10.5979 36.469 11.1736 37.0447C11.7497 37.6208 12.5154 37.938 13.3298 37.938C13.3408 37.938 13.3516 37.9373 13.3623 37.937C13.362 37.9578 13.361 37.9783 13.361 37.9991C13.361 38.8135 13.6782 39.5792 14.2539 40.1553C14.83 40.731 15.5957 41.0482 16.4101 41.0482C16.5709 41.0482 16.73 41.0351 16.8861 41.0109C16.9522 41.689 17.2446 42.349 17.7629 42.8673C18.3571 43.4618 19.1379 43.7589 19.9188 43.7589C20.6996 43.7589 21.4804 43.4618 22.0749 42.8673L22.5412 42.4011L22.7369 42.5588C23.3264 43.1298 24.0918 43.4152 24.8571 43.4152C25.638 43.4152 26.4188 43.1181 27.013 42.5236C27.6196 41.917 27.9167 41.1164 27.9042 40.3197C28.7005 40.3318 29.5015 40.0351 30.1081 39.4288C30.714 38.8226 31.0111 38.0226 30.9993 37.2263C31.8288 37.2394 32.6157 36.9209 33.2028 36.3337C33.8094 35.7271 34.1065 34.9265 34.0941 34.1299C34.891 34.142 35.6913 33.8452 36.2979 33.2386C37.3332 32.2034 37.4665 30.6031 36.6987 29.4218L39.4954 23.5646L43.6999 19.9465C44.0474 19.6474 44.1004 19.1291 43.8208 18.7662ZM9.19536 10.8677L12.6812 13.0843L5.09823 22.3226L2.05953 19.7072L9.19536 10.8677ZM9.68715 30.4547L10.7392 29.4027C10.7711 29.3708 10.8047 29.3406 10.8389 29.3124C11.0447 29.1445 11.2938 29.0445 11.5576 29.0206C11.565 29.02 11.5727 29.02 11.5801 29.0196C11.6177 29.0166 11.6553 29.0146 11.6933 29.0149C12.0538 29.02 12.3888 29.1673 12.6372 29.4295C13.1247 29.9448 13.0985 30.7867 12.5788 31.3064L11.5586 32.3266C11.0427 32.8425 10.2031 32.8425 9.68715 32.3266C9.17119 31.8103 9.17119 30.9707 9.68715 30.4547ZM12.3939 35.8245C12.1438 35.5747 12.0061 35.2424 12.0061 34.8889C12.0061 34.5354 12.1438 34.2031 12.3939 33.953L14.4339 31.913C14.8246 31.5222 15.4389 31.4151 15.9384 31.6532C16.4534 31.8985 16.7431 32.4575 16.6676 33.0198C16.6273 33.3199 16.4876 33.6025 16.2735 33.817L14.2657 35.8245C14.0156 36.0746 13.6832 36.2122 13.3298 36.2122C12.9763 36.2122 12.6439 36.0746 12.3939 35.8245ZM15.4742 38.9347C15.2241 38.6849 15.0864 38.3526 15.0864 37.9991C15.0864 37.6456 15.2241 37.3133 15.4742 37.0632L17.5138 35.0232C17.9318 34.6056 18.6022 34.5156 19.1138 34.8134C19.581 35.0853 19.8258 35.619 19.7455 36.1508C19.7016 36.4432 19.5626 36.7181 19.3534 36.9272L17.346 38.9347C17.0959 39.1848 16.7636 39.3224 16.4101 39.3224C16.0566 39.3224 15.7243 39.1848 15.4742 38.9347ZM18.9828 41.6471C18.4669 41.1311 18.4669 40.2916 18.9828 39.7756L20.0349 38.7235C20.0668 38.6916 20.1 38.6618 20.1343 38.6336C20.1353 38.6329 20.1359 38.6322 20.1366 38.6315C20.3078 38.4926 20.5089 38.3996 20.7234 38.359C20.7284 38.3583 20.7335 38.3576 20.7385 38.357C20.7754 38.3502 20.813 38.3449 20.8506 38.3415C20.8657 38.3402 20.8809 38.3402 20.8963 38.3392C20.9272 38.3375 20.9577 38.3355 20.9889 38.3358C21.3491 38.3408 21.6845 38.4879 21.9329 38.7504C21.9635 38.7826 21.992 38.8162 22.0182 38.8508C22.415 39.3694 22.3616 40.1398 21.8691 40.6326L20.8543 41.6474C20.3384 42.1634 19.4988 42.163 18.9828 41.6471ZM35.0777 32.0184C34.5617 32.5347 33.7221 32.5343 33.2062 32.0184C33.1874 31.9996 33.1676 31.9821 33.1474 31.9657L27.5998 26.3596C27.2644 26.0209 26.7182 26.0182 26.3795 26.3536C26.0408 26.6886 26.0381 27.2348 26.3731 27.5735L31.9809 33.2396C31.9816 33.2403 31.9822 33.241 31.9829 33.2417C32.4989 33.7576 32.4989 34.5975 31.9829 35.1135C31.7328 35.3636 31.4005 35.5012 31.047 35.5012C30.6932 35.5012 30.3608 35.3636 30.1111 35.1135L26.3597 31.3232C26.0247 30.9845 25.4785 30.9818 25.1398 31.3168C24.8011 31.6521 24.7984 32.1983 25.1334 32.537L28.8274 36.2693C28.8462 36.2928 28.8663 36.3153 28.8878 36.3367C29.4038 36.8527 29.4038 37.6926 28.8878 38.2086C28.3715 38.7245 27.5316 38.7242 27.0156 38.2082L24.9683 36.1394C24.6329 35.8006 24.0867 35.7976 23.748 36.133C23.4093 36.468 23.4066 37.0142 23.7416 37.3529L25.732 39.3637C25.7508 39.3872 25.7709 39.41 25.7927 39.4315C26.3087 39.9475 26.3087 40.7874 25.7927 41.3033C25.2768 41.8196 24.4372 41.8193 23.9212 41.3033C23.8618 41.2439 23.792 41.1983 23.7255 41.1472C23.6691 41.1043 23.6544 41.0744 23.6825 41.0059C23.7111 40.9364 23.7537 40.8736 23.7822 40.8038C23.8138 40.7259 23.8393 40.6457 23.8642 40.5651C23.9964 40.1388 24.0354 39.6803 23.9759 39.2378C23.8618 38.3888 23.3949 37.6228 22.6872 37.138C22.3049 36.8765 21.8624 36.705 21.4039 36.6406C21.6261 35.6603 21.3592 34.5975 20.665 33.864C20.0937 33.2605 19.3219 32.9217 18.4917 32.9103C18.4615 32.91 18.4313 32.91 18.4007 32.9103C18.4192 32.1181 18.1312 31.3309 17.585 30.7538C17.0133 30.1503 16.2416 29.8115 15.4117 29.8001C15.165 29.7968 14.9159 29.823 14.6756 29.8783C14.5728 29.1637 14.2126 28.5023 13.6671 28.0293C13.125 27.56 12.4432 27.2995 11.7171 27.2895C10.9527 27.2784 10.2018 27.5604 9.63412 28.073L6.299 23.5791L14.2778 13.8587L16.8206 14.5543L13.4996 20.4145C13.0981 21.1231 12.9968 21.9456 13.214 22.7304C13.4311 23.5156 13.9407 24.1689 14.6494 24.5704C14.6937 24.5955 14.7383 24.6194 14.7837 24.6422C14.787 24.6439 14.7904 24.6456 14.7941 24.6472C14.9132 24.7066 15.0358 24.7577 15.16 24.8006C15.7384 25.0011 16.3631 25.0229 16.9657 24.8564C17.7505 24.6392 18.4038 24.1293 18.8053 23.4209L20.9634 19.6125L24.8169 19.8858L35.078 30.1466C35.5936 30.6629 35.5936 31.5024 35.0777 32.0184ZM35.4352 28.0636L25.8092 18.4379C25.791 18.4194 25.7719 18.402 25.7521 18.3855C25.6135 18.2701 25.4416 18.2002 25.2603 18.1875L20.5421 17.8528C20.2158 17.8303 19.8916 18.0039 19.7304 18.2882L17.304 22.5703C17.1298 22.8778 16.8462 23.099 16.5054 23.1933C16.165 23.2877 15.8079 23.2434 15.5 23.0691C15.1925 22.8949 14.9713 22.6113 14.877 22.2705C14.7826 21.9298 14.8266 21.5726 15.0012 21.2651L18.2403 15.5486L19.5528 15.1709C19.5616 15.1683 19.57 15.1649 19.5787 15.1622L24.4775 13.7476H30.3964L37.7857 23.141L35.4352 28.0636ZM38.916 21.7868L32.0826 13.0954L35.5701 10.8774L41.9553 19.1714L38.916 21.7868Z"
+                        fill="#1C1D20"
+                      />
+                      <path
+                        d="M26.6567 10.4005C26.8776 10.4005 27.0985 10.3162 27.267 10.1477L33.1604 4.25427C33.4974 3.91724 33.4974 3.37106 33.1604 3.03403C32.8234 2.69699 32.2772 2.69699 31.9402 3.03403L26.0467 8.92746C25.7097 9.2645 25.7097 9.81067 26.0467 10.1477C26.2152 10.3162 26.4361 10.4005 26.6567 10.4005Z"
+                        fill="#1C1D20"
+                      />
+                      <path
+                        d="M16.7321 10.1477C16.9007 10.3162 17.1216 10.4005 17.3424 10.4005C17.563 10.4005 17.7839 10.3162 17.9524 10.1477C18.2894 9.81067 18.2894 9.2645 17.9524 8.92746L12.059 3.03403C11.7219 2.69699 11.1758 2.69699 10.8387 3.03403C10.5017 3.37106 10.5017 3.91724 10.8387 4.25427L16.7321 10.1477Z"
+                        fill="#1C1D20"
+                      />
+                      <path
+                        d="M21.9995 10.3996C22.4758 10.3996 22.8622 10.0132 22.8622 9.5369V4.65961C22.8622 4.18326 22.4758 3.79688 21.9995 3.79688C21.5231 3.79688 21.1367 4.18326 21.1367 4.65961V9.5369C21.1367 10.0132 21.5231 10.3996 21.9995 10.3996Z"
+                        fill="#1C1D20"
+                      />
+                      <path
+                        d="M21.2031 1.53411C21.3401 1.86611 21.6815 2.08398 22.0417 2.06518C22.3975 2.04672 22.7101 1.80636 22.8202 1.46764C22.9306 1.12624 22.8104 0.737175 22.5244 0.519646C22.2327 0.297417 21.8258 0.284996 21.5207 0.486748C21.1803 0.711663 21.0484 1.15948 21.2031 1.53411Z"
+                        fill="#1C1D20"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_523">
+                        <rect width="44" height="44" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p className="mb-1 text-heading">350+ Projects Done</p>
+                  <p className="mb-0 text-dark">
+                    From banking and insurance to wealth the management and
+                    security on there
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact Info Card */}
+              <div className="contact-info-card pt-3 pe-5">
+                <div className="icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                  >
+                    <g clipPath="url(#clip0_1_534)">
+                      <mask
+                        id="mask0_1_534"
+                        style={{ maskType: "luminance" }}
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="44"
+                        height="44"
+                      >
+                        <path
+                          d="M0 3.8147e-06H44V44H0V3.8147e-06Z"
+                          fill="white"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_1_534)">
+                        <path
+                          d="M25.8447 4.71548C33.7733 6.47118 39.7031 13.5431 39.7031 22C39.7031 31.7771 31.7772 39.7031 22 39.7031C12.2229 39.7031 4.29688 31.7771 4.29688 22C4.29688 13.5432 10.2267 6.47127 18.1553 4.71548"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M29.0469 25.2656C29.0469 29.1575 25.8919 32.3125 22 32.3125C18.1081 32.3125 14.9531 29.1575 14.9531 25.2656H29.0469Z"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M12.3477 17.7031C12.3477 16.2239 13.5468 15.0247 15.0261 15.0247C16.5053 15.0247 17.7044 16.2239 17.7044 17.7031"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M31.6536 17.7031C31.6536 16.2239 30.4544 15.0247 28.9752 15.0247C27.496 15.0247 26.2969 16.2239 26.2969 17.7031"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M3.97461 0.859376L7.08984 3.97461L3.97461 7.08984L0.859375 3.97461L3.97461 0.859376Z"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M40.0236 36.9102L43.1388 40.0254L40.0236 43.1406L36.9084 40.0254L40.0236 36.9102Z"
+                          stroke="#1C1D20"
+                          strokeWidth="1.875"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_534">
+                        <rect width="44" height="44" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p className="mb-1 text-heading">500+ Happy Clients</p>
+                  <p className="mb-0 text-dark">
+                    From banking and insurance to wealth the management and
+                    security on there
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="col-12 col-md-6">
+              <div
+                className="contact-form bg-primary wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="600ms"
+              >
+                <div className="mb-4 contact-title">Send Us Message</div>
+                <form>
+                  <div className="row g-4">
+                    <div className="col-12 col-lg-6">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Your Name"
+                        autoComplete="name"
+                      />
+                    </div>
+
+                    <div className="col-12 col-lg-6">
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address"
+                        autoComplete="email"
+                      />
+                    </div>
+
+                    <div className="col-12 col-lg-6">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number"
+                        autoComplete="phone"
+                      />
+                    </div>
+
+                    <div className="col-12 col-lg-6">
+                      <input
+                        type="text"
+                        name="subject"
+                        className="form-control"
+                        placeholder="Subject"
+                      />
+                    </div>
+
+                    <div className="col-12">
+                      <textarea
+                        name="message"
+                        className="form-control"
+                        placeholder="Message"
+                        id="message"
+                      ></textarea>
+                    </div>
+
+                    <div className="col-12">
+                      <button className="btn btn-dark" type="submit">
+                        <span>
+                          Send Message <i className="ti ti-arrow-up-right"></i>
+                        </span>
+                        <span>
+                          Send Message <i className="ti ti-arrow-up-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+      </section>
+
+      {/* Scroll To Top */}
+      <ScrollToTop />
+
+      {/* Magnet Cursor */}
+      <MagnetCursor />
+    </div>
+  );
+}
+
+export default AboutUs;
